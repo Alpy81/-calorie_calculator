@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form onsubmit="Calc(); return false">
+            <h1>Kalorienrechner</h1>
+            <label for="text">Körpergröße</label><br>
+            <input placeholder="in cm" type="number" id="height" /><br>
+            <label for="text">Alter</label><br>
+            <input type="number" id="age" /><br>
+            <label for="text">Gewicht</label><br>
+            <input placeholder="in kg" type="number" id="weight" /><br>
+            <label for="text">Körperbau</label><br>
+            <div class="radio-sex">
+                <input class="radio-btn" type="radio" id="female" name="radio" value="weiblich" required checked />
+                <label for="radio-female">Weiblich</label><br>
+                <input class="radio-btn" type="radio" id="male" name="radio" value="männlich" required /> 
+                <label for="radio-male">Männlich</label><br>
+            </div>
+            <label for="text">Arbeits- und Freizeitaktivität</label><br>
+            <select id="aktivitaet" name="pal-faktor">
+                <option value="0.95">Schlafen</option>
+                <option value="1.2">Nur Sitzen oder Liegen</option>
+                <option value="1.5">
+                    Ausschließlich sitzende Tätigkeit mit wenig oder keiner
+                    körperlichen Aktivität 
+                </option>
+                <option value="1.7">
+                    Sitzende Tätigkeit mit zeitweilig gehender oder stehender
+                    Tätigkeit
+                </option>
+                <option value="1.9">
+                    Überwiegend gehende oder stehende Tätigkeit
+                </option>
+                <option value="2.2">
+                    Körperlich anstrengende berufliche Arbeit
+                </option>
+            </select><br>
+            <input type="submit" id="sub" value="Submit" />
+            <table>
+                <tr>
+                    <td id="result">Ergebnis:</td>
+                    <td id="kcal">kcal</td>
+                    <td id="kj">kJ</td>
+                </tr>
+                <tr>
+                    <td>Grundumsatz</td>
+                    <td class="output-gu-kcal"></td>
+                    <td class="output-gu-kj"></td>
+                </tr>
+                <tr>
+                    <td>Gesamtumsatz</td>
+                    <td class="output-gesu-kcal"></td>
+                    <td class="output-gesu-kj"></td>
+                </tr>
+            </table>
+        </form>
+    </main>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
+            
+
+
+            
+            
+            
+            
+            
+        
+
+        
+        
+            
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
